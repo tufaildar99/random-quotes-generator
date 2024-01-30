@@ -16,83 +16,9 @@ code {
 /* CSS */
 
 .app {
-  width: 30%; /* Adjust this to change the width */
-  margin: 100px auto; /* This centers the div */
+  width: 30%;
+  margin: 100px auto;
   box-sizing: border-box;
   border: 1px solid #000;
   border-radius: 5px;
-}
-/* CSS */
-
-/* CSS */
-
-.header {
-  background-color: #007bff;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.header h2 {
-  font-size: 28px;
-}
-
-.welcome {
-  background-color: #f0f0f0;
-  padding: 20px;
-
-  text-align: center;
-}
-
-.welcome h3 {
-  color: #333;
-  font-size: 24px;
-}
-
-.welcome p {
-  color: #666;
-  font-size: 16px;
-}
-
-/* CSS */
-
-.quote-display {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-
-  min-height: 100px;
-}
-
-.quote-display h4 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.quote-display h6 {
-  color: #666;
-  font-size: 16px;
-  font-style: italic;
-}
-
-.quote-generator-button {
-  text-align: center;
-  padding-bottom: 50px;
-  background-color: #f0f0f0;
-}
-
-.quote-generator-button button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.quote-generator-button button:hover {
-  background-color: #0056b3;
 }

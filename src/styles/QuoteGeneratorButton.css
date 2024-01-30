@@ -1,0 +1,19 @@
+.quote-generator-button {
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: #f0f0f0;
+}
+
+.quote-generator-button button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.quote-generator-button button:hover {
+  background-color: #0056b3;
+}
