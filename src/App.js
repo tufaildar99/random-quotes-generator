@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useState } from "react";
 
-function App() {
+export default function App() {
+  const [displayQuote, setDisplayQuote] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      {displayQuote ? <QuoteDisplay /> : <Welcome />}
+      <QuoteGeneratorButton />
     </div>
   );
 }
 
-export default App;
+function Header() {
+  return (
+    <div className="header">
+      <h2>Quotes Generator</h2>
+    </div>
+  );
+}
+
+function Welcome() {
+  return (
+    <div className="welcome">
+      <h3>Welcome!</h3>
+      <p>Click on the button below to start generating quotes.</p>
+    </div>
+  );
+}
+
+function QuoteDisplay() {
+  return (
+    <div className="quote-display">
+      <h4>
+        "Never apologize for showing feeling. When you do so, you apologize for
+        truth."
+      </h4>
+      <h6>Benjamin Franklin</h6>
+    </div>
+  );
+}
+
+function QuoteGeneratorButton({ handleSubmit }) {
+  return (
+    <div className="quote-generator-button">
+      <form onSubmit={handleSubmit}>
+        <button type="submit">Generate Quote</button>
+      </form>
+    </div>
+  );
+}
